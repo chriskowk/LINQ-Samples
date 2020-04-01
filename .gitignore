@@ -41,6 +41,11 @@
 *.su
 *.idb
 *.pdb
+*.zip
+*.rar
+*.via
+*.tmp
+*.err
 
 # Kernel Module Compile Results
 *.mod*
@@ -50,6 +55,8 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+Debug/
+Release/
 obj/
 bin/
 .vs/
