@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Collections.Concurrent;
 
 namespace ConcurrentDictionaryTest
 {
@@ -16,10 +17,8 @@ namespace ConcurrentDictionaryTest
         static void Main(string[] args)
         {
             //RunNormalDictionary();
-
-            RunConcurrentOrLockDictionary();
-            
-            Console.ReadKey();
+            //RunConcurrentOrLockDictionary();
+            DictionaryHowTo.DoTasks();
         }
 
         private static void RunNormalDictionary()
@@ -40,6 +39,8 @@ namespace ConcurrentDictionaryTest
 
                 }, i);
             }
+
+            Console.ReadKey();
         }
 
         static ILog GetLogger(string cmdId)
@@ -96,6 +97,7 @@ namespace ConcurrentDictionaryTest
             });
 
             Console.WriteLine("已执行完成");
+            Console.ReadKey();
         }
     }
 }

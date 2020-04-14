@@ -46,7 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CityInfo.cs" />
     <Compile Include="CodeTimer.cs" />
+    <Compile Include="DictionaryHowTo.cs" />
     <Compile Include="GetLogger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
